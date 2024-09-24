@@ -4,6 +4,8 @@ frontend/**/*.env*
 # This pattern matches any file that starts with ".env" in the frontend directory,
 # including ".env.development.local" and any other variations in all subdirectories.
 
+#another .env unfortunately 
+forum_dapp/.env
 # Ignore the .next directory and all its contents in the frontend directory
 frontend/.next/
 # Explanation:
