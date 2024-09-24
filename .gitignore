@@ -1,0 +1,43 @@
+ # Ignore all .env files in the frontend directory and its subdirectories
+frontend/**/*.env*
+# Explanation:
+# This pattern matches any file that starts with ".env" in the frontend directory,
+# including ".env.development.local" and any other variations in all subdirectories.
+
+# Ignore the .next directory and all its contents in the frontend directory
+frontend/.next/
+# Explanation:
+# This entry ignores the entire .next directory located directly under the frontend directory.
+# It will not track the directory itself or any files within it.
+
+frontend/.next/**
+# Explanation:
+# This pattern ensures that all files and subdirectories within the .next directory are ignored.
+# It acts as a precaution to cover any nested files that might be created later.
+
+# Ignore the lib directory and all its contents in the forum-dapp directory
+forum_dapp/lib/
+# Explanation:
+# This line ignores the lib directory located in the forum-dapp directory,
+# preventing Git from tracking it or any of its contents.
+
+forum_dapp/lib/**
+# Explanation:
+# This ensures that all files and any subdirectories within the lib directory are ignored.
+
+# Ignore the out directory and all its contents in the forum-dapp directory
+forum_dapp/out/
+# Explanation:
+# This entry ignores the out directory located in the forum-dapp directory,
+# so no files or subdirectories within it are tracked.
+
+forum_dapp/out/**
+# Explanation:
+# This ensures that all files and any subdirectories within the out directory are ignored.
+
+# Ignore the node_modules directory in the frontend directory
+frontend/node_modules/
+# Explanation:
+# This line ignores the node_modules directory located in the frontend directory,
+# preventing Git from tracking its contents, which can be large and are typically
+# installed via package managers.
